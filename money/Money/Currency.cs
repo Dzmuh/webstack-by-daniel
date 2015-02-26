@@ -46,6 +46,12 @@ namespace money
         /// <summary>
         /// NZD
         /// </summary>
-        NZD = 554
+        NZD = 554,
+
+        /// <summary>
+        /// DKK
+        /// </summary>
+        DKK = 208
+
     }
 }
