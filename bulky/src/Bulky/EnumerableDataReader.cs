@@ -102,15 +102,16 @@ namespace bulky
 
         public int GetOrdinal(string name)
         {
-            var map = _properties.First(p => p.ColumnName == name);
-            if (map != null)
+            var map = _properties.FirstOrDefault(p => p.ColumnName == name);
+            if (map == null)
             {
-                for (var i = 0; i < _properties.Length; i++)
+                throw new InvalidOperationException(String.Format("No property found with name '{0}'", name));
+            }
+            for (var i = 0; i < _properties.Length; i++)
+            {
+                if (_properties[i] == map)
                 {
-                    if (_properties[i] == map)
-                    {
-                        return i;
-                    }
+                    return i;
                 }
             }
             return -1;
