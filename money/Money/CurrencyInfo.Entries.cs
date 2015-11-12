@@ -78,6 +78,14 @@ namespace money
                         Code = Currency.INR
                     }
                 },
+            {
+                Currency.DKK,
+                new CurrencyInfo
+                    {
+                        DisplayName = "Danish Krone",
+                        Code = Currency.DKK
+                    }
+                }
         };
     }
 }
