@@ -11,7 +11,7 @@ native bulk copy mechanism of your database simply, using plain C# objects and a
 ### Why would I use this?
 - You want simple, high speed bulk inserts of large collections of objects
 - You need support for multiple databases (SQL Server, MySQL, and SQLite are supported today)
-- It works great with [tophat](http://github.com/danielcrenna/tophat)
+- It works great with [tophat](https://github.com/danielcrenna/webstack/tree/master/tophat)
 
 ### Usage
 
